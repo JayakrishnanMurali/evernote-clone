@@ -18,6 +18,10 @@ export const SidebarStyled = styled.div`
 
     .sidebar__avatarIcon {
       font-size: 2.5rem;
+
+      @media screen and (max-width: 960px) {
+        font-size: 2rem;
+      }
     }
 
     > h4 {
@@ -31,10 +35,18 @@ export const SidebarStyled = styled.div`
         color: var(--white-color);
         transition: all 0.5s ease;
       }
+
+      @media screen and (max-width: 960px) {
+        display: none;
+      }
     }
 
     .sidebar__downArrow {
       font-size: 1rem;
+
+      @media screen and (max-width: 960px) {
+        display: none;
+      }
     }
   }
 
@@ -49,6 +61,13 @@ export const SidebarStyled = styled.div`
       color: var(--grey-color);
       position: relative;
       padding-left: 1.9rem;
+
+      @media screen and (max-width: 960px) {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: transparent;
+      }
     }
 
     .sidebar__searchIcon {
@@ -58,6 +77,10 @@ export const SidebarStyled = styled.div`
       margin-left: 0.3rem;
       margin-top: 0.48rem;
       font-size: 1.3rem;
+
+      @media screen and (max-width: 960px) {
+        display: none;
+      }
     }
   }
 
@@ -79,6 +102,13 @@ export const SidebarStyled = styled.div`
         background: var(--dark-green-color);
         transition: all 0.3s ease;
       }
+
+      @media screen and (max-width: 960px) {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: transparent;
+      }
     }
   }
   .sidebar__down {
@@ -97,10 +127,19 @@ export const SidebarStyled = styled.div`
         font-size: 0.918rem;
         font-weight: 400;
         margin-left: 0.1rem;
+
+        @media screen and (max-width: 960px) {
+          display: none;
+        }
       }
       .sidebar__starIcon {
         font-size: 1.2rem;
         margin-bottom: 0.2px;
+
+        @media screen and (max-width: 960px) {
+          font-size: 1.5rem;
+          position: relative;
+        }
       }
     }
   }
@@ -113,7 +152,17 @@ export const SidebarStyled = styled.div`
       width: 19px;
       text-align: center;
       color: var(--black-color);
+
+      @media screen and (max-width: 960px) {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+      }
     }
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 4rem;
   }
 `;
 
@@ -129,10 +178,19 @@ export const SidebarMenu = styled.ul`
       align-items: center;
       color: var(--grey-color);
       font-size: 0.918rem;
-
+      > h4 {
+        font-weight: 400;
+        @media screen and (max-width: 960px) {
+          display: none;
+        }
+      }
       .sidebar__homeIcon {
         font-size: 1.3rem;
         margin-right: 0.5rem;
+
+        @media screen and (max-width: 960px) {
+          font-size: 1.9rem;
+        }
       }
 
       .sidebar__flashIcon {
@@ -142,6 +200,10 @@ export const SidebarMenu = styled.ul`
         color: var(--white-color);
         border-radius: 100%;
         padding: 2px;
+
+        @media screen and (max-width: 960px) {
+          font-size: 1.7rem;
+        }
       }
     }
   }

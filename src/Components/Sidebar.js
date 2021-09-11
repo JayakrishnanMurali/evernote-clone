@@ -42,28 +42,28 @@ function Sidebar() {
           <li>
             <NavLink activeClassName="selected" exact to="/home" class>
               <Home className="sidebar__homeIcon" />
-              Home
+              <h4>Home</h4>
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/shortcuts">
               <Star className="sidebar__homeIcon" />
-              Shortcuts
+              <h4>Shortcuts</h4>
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/notes">
               <NoteAdd className="sidebar__homeIcon" />
-              Notes
+              <h4>Notes</h4>
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/tasks">
               <CheckCircle className="sidebar__homeIcon" />
-              Tasks
+              <h4>Tasks</h4>
             </NavLink>
           </li>
         </SidebarMenu>
@@ -71,21 +71,21 @@ function Sidebar() {
           <li>
             <NavLink activeClassName="selected" to="/notebooks">
               <Book className="sidebar__homeIcon" />
-              Notebooks
+              <h4>Notebooks</h4>
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/tags">
               <LocalOffer className="sidebar__homeIcon" />
-              Tags
+              <h4>Tags</h4>
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/sharedwithme">
               <People className="sidebar__homeIcon" />
-              Shared with Me
+              <h4>Shared with Me</h4>
             </NavLink>
           </li>
         </SidebarMenu>
@@ -93,14 +93,14 @@ function Sidebar() {
           <li>
             <NavLink activeClassName="selected" to="/trash">
               <Delete className="sidebar__homeIcon" />
-              Trash
+              <h4>Trash</h4>
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/upgrade">
               <FlashOn className="sidebar__flashIcon" />
-              Upgrade
+              <h4>Upgrade</h4>
             </NavLink>
           </li>
         </SidebarMenu>
