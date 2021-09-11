@@ -1,14 +1,18 @@
 import React from "react";
 import { Sidebar } from "./Components";
-import GlobalStyle from "./GlobalStyle";
+import GlobalStyle, { FlexboxContainer } from "./GlobalStyle";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <>
       <Router>
         <GlobalStyle />
-        <Sidebar />
+        <FlexboxContainer>
+          <Sidebar />
+          <HomePage />
+        </FlexboxContainer>
       </Router>
     </>
   );

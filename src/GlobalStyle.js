@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -14,6 +14,12 @@ const GlobalStyle = createGlobalStyle`
     --black-color: #111111;
     --orange-color: #ffaa00;
     --dark-gray-color: #343a40;
+    --black-fade-gradient: linear-gradient(
+      180deg,
+      transparent,
+      rgba(16, 16, 16, 0.7),
+      #020202
+    );
 }
 
 
@@ -28,6 +34,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Sora', sans-serif;
   }
+`;
+
+export const FlexboxContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
 `;
 
 export default GlobalStyle;

@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
 export const SidebarStyled = styled.div`
+  z-index: 1000;
   height: 100vh;
   width: 15rem;
-  border-right: 1 px solid var(--dark-gray-color);
+  outline: 1px solid var(--dark-gray-color);
   background: var(--primary-bg-color);
   color: var(--grey-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: fixed;
 
   .sidebar__userInfo {
     display: flex;
