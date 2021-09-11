@@ -1,8 +1,16 @@
+import React from "react";
+import { Sidebar } from "./Components";
+import GlobalStyle from "./GlobalStyle";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Jkay</h1>
-    </div>
+    <>
+      <Router>
+        <GlobalStyle />
+        <Sidebar />
+      </Router>
+    </>
   );
 }
 
