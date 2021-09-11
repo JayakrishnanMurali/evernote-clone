@@ -11,6 +11,7 @@ import {
   People,
   Search,
   Star,
+  StarBorder,
 } from "@material-ui/icons";
 import React from "react";
 import { NavLink } from "react-router-dom";
@@ -40,28 +41,28 @@ function Sidebar() {
         <SidebarMenu>
           <li>
             <NavLink activeClassName="selected" exact to="/home" class>
-              <Home />
+              <Home className="sidebar__homeIcon" />
               Home
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/shortcuts">
-              <Star />
+              <Star className="sidebar__homeIcon" />
               Shortcuts
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/notes">
-              <NoteAdd />
+              <NoteAdd className="sidebar__homeIcon" />
               Notes
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/tasks">
-              <CheckCircle />
+              <CheckCircle className="sidebar__homeIcon" />
               Tasks
             </NavLink>
           </li>
@@ -69,21 +70,21 @@ function Sidebar() {
         <SidebarMenu>
           <li>
             <NavLink activeClassName="selected" to="/notebooks">
-              <Book />
+              <Book className="sidebar__homeIcon" />
               Notebooks
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/tags">
-              <LocalOffer />
+              <LocalOffer className="sidebar__homeIcon" />
               Tags
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/sharedwithme">
-              <People />
+              <People className="sidebar__homeIcon" />
               Shared with Me
             </NavLink>
           </li>
@@ -91,14 +92,14 @@ function Sidebar() {
         <SidebarMenu>
           <li>
             <NavLink activeClassName="selected" to="/trash">
-              <Delete />
+              <Delete className="sidebar__homeIcon" />
               Trash
             </NavLink>
           </li>
 
           <li>
             <NavLink activeClassName="selected" to="/upgrade">
-              <FlashOn />
+              <FlashOn className="sidebar__flashIcon" />
               Upgrade
             </NavLink>
           </li>
@@ -107,7 +108,7 @@ function Sidebar() {
 
       <div className="sidebar__down">
         <div className="sidebar__whatsnew">
-          <Star />
+          <StarBorder className="sidebar__starIcon" />
           <h3>What's New</h3>
         </div>
         <h4>3</h4>

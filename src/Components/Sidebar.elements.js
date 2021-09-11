@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const SidebarStyled = styled.div`
   height: 100vh;
   width: 15rem;
+  border-right: 1 px solid var(--dark-gray-color);
   background: var(--primary-bg-color);
   color: var(--grey-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
 
   .sidebar__userInfo {
     display: flex;
@@ -62,6 +62,7 @@ export const SidebarStyled = styled.div`
   }
 
   .sidebar__top {
+    padding: 20px;
     > button {
       margin-top: 0.75rem;
       width: 100%;
@@ -80,6 +81,68 @@ export const SidebarStyled = styled.div`
       }
     }
   }
+  .sidebar__down {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1px solid var(--dark-gray-color);
+
+    .sidebar__whatsnew {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      > h3 {
+        font-size: 0.918rem;
+        font-weight: 400;
+        margin-left: 0.1rem;
+      }
+      .sidebar__starIcon {
+        font-size: 1.2rem;
+        margin-bottom: 0.2px;
+      }
+    }
+  }
+  .sidebar__down {
+    > h4 {
+      font-size: 0.818rem;
+      font-weight: 400;
+      background: var(--blue-color);
+      border-radius: 30%;
+      width: 19px;
+      text-align: center;
+      color: var(--black-color);
+    }
+  }
 `;
 
-export const SidebarMenu = styled.ul``;
+export const SidebarMenu = styled.ul`
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  > li {
+    margin-bottom: 0.1rem;
+    padding: 0.3rem 0;
+    > a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: var(--grey-color);
+      font-size: 0.918rem;
+
+      .sidebar__homeIcon {
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+      }
+
+      .sidebar__flashIcon {
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+        background: var(--orange-color);
+        color: var(--white-color);
+        border-radius: 100%;
+        padding: 2px;
+      }
+    }
+  }
+`;
